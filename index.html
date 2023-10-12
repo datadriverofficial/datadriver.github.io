@@ -78,27 +78,27 @@
         <header id="banner" class="scrollto clearfix" data-enllax-ratio=".5" style="background-position: right -20px; background-image: url('images/banner-images/banner-image-1.jpg');">
             <div id="header" class="nav-collapse">
                 <div class="row clearfix">
-                    <div class="col-1">
+                    <div class="col-12 p-md-3 p-0">
 
                         <!--Logo-->
                         <div id="logo">
 
                             <!--Logo that is shown on the banner-->
                             <a href="./">
-                                <img src="images/logo.png" id="banner-logo" alt="Landing Page" />
+
                             </a>
                             <!--End of Banner Logo-->
 
                             <!--The Logo that is shown on the sticky Navigation Bar-->
                             <a href="./">
-                                <img src="images/logo-2.png" id="navigation-logo" alt="Landing Page" />
+                                <img src="images/logo-2.png" id="navigation-logo" class="pe-3" alt="Landing Page" />
                             </a>
                             <!--End of Navigation Logo-->
 
                         </div>
                         <!--End of Logo-->
 
-                        <aside>
+                        <aside class="pe-1 pt-sm-2 pe-sm-3">
 
                             <!--Social Icons in Header-->
                             <ul class="social-icons">
@@ -156,27 +156,30 @@
             <!--End of Header-->
 
             <!--Banner Content-->
-            <section id="banner-content" class="row clearfix light-background">
-                <div class="col-50 vertical-center">
-                    <div class="section-heading">
-                        <h1>Data Driver </h1>
-                        <h2>具體化你的概念，實現你所想</h2>
-                        <h2>我們主要提供的服務包括 網站設計、SEO、Python或R自動化程式等等。</h2>
-                        <p>你需要：</p>
-                        <a href="#web" class="button">網站設計</a>
-                        <a href="#plugin" class="button">網站插件</a>
-                        <a onclick="pop_up_screen()" class="button">商品SEO</a>
-                        <a onclick="pop_up_screen()" class="button">商品廣告圖片</a>
-                        <a href="#program" class="d-none button">各類網站數據收集</a>
-                        <a href="#program" class="d-none button">報表自動化</a>
+            <section id="banner-content" class="row clearfix">
+                <div class="vertical-center ">
+                    <div class="col-50 ps-3 pb-0 ps-xl-5">
+                        <div class="section-heading">
+                            <h1>Data Driver </h1>
+                            <h2>具體化你的概念，實現你所想</h2>
+                            <h2>我們主要提供的服務包括 網站設計、SEO、Python或R自動化程式等等。</h2>
+                            <p>你需要：</p>
+                            <a href="#web" class="button">網站設計</a>
+                            <a href="#plugin" class="button">網站插件</a>
+                            <a onclick="pop_up_screen()" class="button">商品SEO</a>
+                            <a onclick="pop_up_screen()" class="button">商品廣告圖片</a>
+                            <a href="#program" class="d-none button">各類網站數據收集</a>
+                            <a href="#program" class="d-none button">報表自動化</a>
+                        </div>
                     </div>
-                    <p>如果你有特別的編程需求，歡迎聯絡我們作深入討論。</p>
+                    <div class="container d-flex">
+                        <p class="w-100">如果你有特別的編程需求，<span>歡迎聯絡我們作深入討論。</span></p>
+                    </div>
                     <!--Call to Action-->
-                    <a href="#contact" class="button m-4">了解更多</a>
+                    <a href="#contact" class="button mb-5">了解更多</a>
                     <!--End Call to Action-->
 
                 </div>
-
             </section>
             <!--End of Row-->
         </header>
@@ -190,7 +193,8 @@
                     <div class="section-heading">
                         <h3>網頁設計</h3>
                         <h2 class="section-title">提供個人化設計</h2>
-                        <p class="section-subtitle">配合你品牌的顏色和主題，建立一套專屬你的網頁設計</p>
+                        <p class="section-subtitle">配合你品牌的顏色和主題，建立一套<span>專屬你的網頁設計</span>
+                        </p>
                     </div>
                     <!--Description Block-->
                     <div class="col-3-1 wow fadeInUp" data-wow-delay="0.1s">
@@ -239,7 +243,7 @@
                     <div class="section-heading">
                         <h3>熱門插件</h3>
                         <h2 class="section-title">以優惠價錢購買插件</h2>
-                        <p class="section-subtitle">不用重新製作網站，在你現時的網站上簡單加入</p>
+                        <p class="section-subtitle">不用重新製作網站，在你現時的<span>網站上簡單加入</span></p>
                     </div>
                     <!--Icon Block-->
                     <div class="col-3-1 icon-block icon-top wow fadeInUp" data-wow-delay="0.1s">
@@ -266,7 +270,8 @@
                         <!--Icon Block Description-->
                         <div class="description">
                             <h4>門店地圖</h4>
-                            <p>可跳轉到Google Map，提高用戶體驗和方便性，<br>節省尋找時間</p>
+                            <p>可跳轉到Google Map，<span>提高用戶體驗和方便性，</span><span>節省尋找時間</span>
+                            </p>
                         </div>
                     </div>
                     <!--End of Icon Block-->
@@ -281,7 +286,7 @@
                         <!--Icon Block Description-->
                         <div class="description">
                             <h4>Instagram帖子</h4>
-                            <p>吸引客戶追蹤Instagram，提高客戶再瀏覽網站的機會</p>
+                            <p>吸引客戶追蹤Instagram，<span>提高客戶再瀏覽網站的機會</span></p>
                         </div>
                     </div>
                     <!--End of Icon Block-->
@@ -344,10 +349,9 @@
                 <div class="row clearfix mb-5">
                     <div class="section-heading">
                         <h2 class="section-title">聯絡我們</h2>
-                        <h3 class="section-subtitle">不管網店新手或資深店家，我們都有適合您的產品。</h3>
+                        <p class="section-subtitle">不管網店新手或資深店家，<span>我們都有適合您的產品。</span></p>
                     </div>
                     <!--Social Icons in Footer-->
-
                     <ul class="social-icons">
                         <a target="_blank" title="WhatsApp" href="https://wa.me/85291515554">
                             <li>
@@ -377,30 +381,32 @@
         <footer id="landing-footer" class="clearfix">
             <div class="row clearfix">
 
-                <p id="copyright" class="col-2">Copyright ©
+                <p id="copyright" class="col-7">Copyright ©
                     <script>
                         document.write(new Date().getFullYear());
                     </script>
                     版權所有 | Data Driver</p>
 
                 <!--Social Icons in Footer-->
-                <ul class="col-2 social-icons">
-                    <li>
-                        <a target="_blank" title="WhatsApp" href="https://wa.me/85291515554">
-                            <i class="fa fa-whatsapp fa-1x"></i><span>WhastApp</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" title="Telegram" href="https://t.me/datadriverofficial">
-                            <i class="fa fa-paper-plane "></i><span>Twitter</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" title="Email" href="mailto:data.driver.official@gmail.com">
-                            <i class="fa fa-envelope fa-1x"></i><span>Instagram</span>
-                        </a>
-                    </li>
-                </ul>
+                <div class="col-5 text-sm-center">
+                    <ul class="vertical-center social-icons">
+                        <li>
+                            <a target="_blank" title="WhatsApp" href="https://wa.me/85291515554">
+                                <i class="fa fa-whatsapp fa-1x"></i><span>WhastApp</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" title="Telegram" href="https://t.me/datadriverofficial">
+                                <i class="fa fa-paper-plane "></i><span>Twitter</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" title="Email" href="mailto:data.driver.official@gmail.com">
+                                <i class="fa fa-envelope fa-1x"></i><span>Instagram</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
                 <!--End of Social Icons in Footer-->
             </div>
         </footer>
