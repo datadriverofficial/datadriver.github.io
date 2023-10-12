@@ -29,16 +29,40 @@
 
 
 /*------------------------------------------------------------------------------------------*/
+
+
 /* 1. Typography */
+
+
 /*------------------------------------------------------------------------------------------*/
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, blockquote, th, td {
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+blockquote,
+th,
+td {
     margin: 0;
     padding: 0;
     direction: ltr;
@@ -50,9 +74,9 @@ body {
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
-    font-size:15px;
-    font-weight:normal;
-    color:#111;
+    font-size: 15px;
+    font-weight: normal;
+    color: #111;
 }
 
 .row img {
@@ -82,6 +106,7 @@ figure {
     margin: 0;
 }
 
+
 /* Page Border */
 
 .page-border {
@@ -90,24 +115,32 @@ figure {
     pointer-events: none;
 }
 
-.page-border .bottom-border, .page-border .left-border, .page-border .right-border, .page-border .top-border {
+.page-border .bottom-border,
+.page-border .left-border,
+.page-border .right-border,
+.page-border .top-border {
     background: #f3f3ef;
     position: fixed;
     z-index: 9999;
 }
 
-.page-border > .top-border, .page-border > .right-border, .page-border > .bottom-border, .page-border > .left-border {
+.page-border>.top-border,
+.page-border>.right-border,
+.page-border>.bottom-border,
+.page-border>.left-border {
     padding: 11px;
     background: #ccc;
 }
 
-.page-border .bottom-border, .page-border .top-border {
+.page-border .bottom-border,
+.page-border .top-border {
     width: 100%;
     padding: 10px;
     left: 0;
 }
 
-.page-border .left-border, .page-border .right-border {
+.page-border .left-border,
+.page-border .right-border {
     padding: 10px;
     height: 100%;
     top: 0;
@@ -130,13 +163,17 @@ figure {
 }
 
 #wrapper {
-    margin:0 15px;
+    margin: 0 15px;
     padding: 15px 0;
     position: relative;
 }
 
+
 /* --------- 1.1 Colors ---------- */
+
+
 /* https://colorpalettes.net/color-palette-4281/ */
+
 :root {
     --brand-white: #fff;
     --brand-dark-gray: #212123;
@@ -146,75 +183,80 @@ figure {
     --brand-med-brown: #c08267;
     --brand-dark-brown: #a0583c;
 }
+
 body {
-    background:#fff;
+    background: var(--brand-med-gray);
 }
 
 
 /* Default Link Color */
 
-a, .la-ball-triangle-path {
-    color:var(--brand-med-brown);
+a,
+.la-ball-triangle-path {
+    color: var(--brand-med-brown);
 }
 
 a:hover {
-    color:var(--brand-med-brown);
-    text-shadow:0px 0px 1px var(--brand-med-brown);
+    color: var(--brand-med-brown);
+    text-shadow: 0px 0px 1px var(--brand-med-brown);
     /* opacity: 0.6; */
 }
+
 
 /* Default Icon Color */
 
 .icon i {
-    color:var(--brand-med-brown);
+    color: var(--brand-med-brown);
 }
+
 
 /* Border Color */
 
-#banner-content .section-heading:before, .feedback footer:before {
+#banner-content .section-heading:before,
+.feedback footer:before {
     background: var(--brand-med-brown);
 }
+
 
 /* Navigation Active State */
 
 #header.nav-solid .active {
     color: var(--brand-med-brown);
-    text-shadow:0px 0px 1px var(--brand-med-brown);
-    border-color:var(--brand-med-brown);
-}    
+    text-shadow: 0px 0px 1px var(--brand-med-brown);
+    border-color: var(--brand-med-brown);
+}
+
 
 /* Primary Background and Text Colors */
 
 .featured .pricing {
-    background-color:var(--brand-med-brown);
+    background-color: var(--brand-med-brown);
 }
 
-.light-background, .light-background .section-title, .light-background .section-subtitle, .featured .pricing, .featured .pricing p,
-.light-background .icon i, .light-background i  { 
-    color: var(--brand-dark-gray); 
+.light-background,
+.light-background .section-title,
+.light-background .section-subtitle,
+.featured .pricing,
+.featured .pricing p,
+.light-background .icon i,
+.light-background i {
+    background-color: var(--brand-light-gray);
+    color: var(--brand-dark-gray);
 }
 
-.section-heading:after {
-    background:var(--brand-med-brown);
-    content:"";
-    display:block;
-    width:30px;
-    height:5px;
-    margin:30px auto 25px auto;
-    border-radius: 5px;
-}
 
 /* Secondary Background and Text Colors */
 
 .dark-background {
-    background-color:var(--brand-dark-gray);
+    background-color: var(--brand-dark-gray);
     color: var(--brand-light-gray);
 }
 
 
 /* --------- 1.2 Input Elements ---------- */
 
-input, textarea {
+input,
+textarea {
     border: 1px solid #e1e1e1;
     padding: 10px;
     -webkit-transition: all .3s linear;
@@ -245,7 +287,8 @@ select {
     padding: 5px;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -253,54 +296,94 @@ input:focus, textarea:focus {
     outline: none;
 }
 
+
 /*------------------------------------------------------------------------------------------*/
+
+
 /* 2. Layout Elements */
+
+
 /*------------------------------------------------------------------------------------------*/
 
 section {
     overflow: hidden;
     text-align: center;
 }
+
+
+/* Section Headings */
+
+.section-heading {
+    padding: 15px 0;
+    width: 100%;
+}
+
+.section-heading h3 {
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-bottom: 0;
+    margin-top: 10px;
+}
+
+.section-heading:after {
+    background: var(--brand-med-brown);
+    content: "";
+    display: block;
+    width: 30px;
+    height: 5px;
+    margin: 30px auto 25px auto;
+    border-radius: 5px;
+}
+
+
 /* Section Title and Subtitle */
 
 .section-title {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
-    font-size: 34px; 
-    font-weight:700;
+    font-size: 1.6em;
+    font-weight: 700;
 }
 
 .section-subtitle {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
-    font-size: 16px;
-    font-weight:300;
+    font-size: 1em;
+    font-weight: 300;
+    padding: 0 65px;
 }
+
 
 /* Feedback */
 
 .feedback q {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
-    font-size: 17px; 
-    font-weight:300;
+    font-size: 17px;
+    font-weight: 300;
 }
 
-.feedback q, .feedback footer {
-    color:#111;
+.feedback q,
+.feedback footer {
+    color: #111;
 }
+
 
 /* Rows and Columns */
 
 .row {
-    max-width: 1245px;
+    max-width: 1920px;
     margin: 0 auto;
     padding: 65px 0;
     position: relative;
 }
 
-.no-padding-bottom .row, .no-padding-bottom div, .no-padding-bottom.row {
+.no-padding-bottom .row,
+.no-padding-bottom div,
+.no-padding-bottom.row {
     padding-bottom: 0;
 }
 
-.no-padding-top.row, .no-padding-top div {
+.no-padding-top.row,
+.no-padding-top div {
     padding-top: 0;
 }
 
@@ -311,6 +394,7 @@ section {
 .big-padding-bottom {
     padding-bottom: 85px !important;
 }
+
 
 /* Targets all elements */
 
@@ -323,6 +407,7 @@ section {
     padding: 0;
 }
 
+
 /* Clearfix */
 
 .clearfix:after {
@@ -331,61 +416,14 @@ section {
     clear: both;
 }
 
+
 /* Main Widths */
-
-.col-1 {
-    width: 100%;
-}
-
-.col-2 {
-    width: 50%;
-}
-
-.col-3 {
-    width: 33.33%;
-}
-
-.col-4 {
-    width: 25%;
-}
-
-.col-5 {
-    width: 20%;
-}
-
-.col-6 {
-    width: 16.6666666667%;
-}
-
-.col-7 {
-    width: 14.2857142857%;
-}
-
-.col-8 {
-    width: 12.5%;
-}
-
-.col-9 {
-    width: 11.1111111111%;
-}
-
-.col-10 {
-    width: 10%;
-}
-
-.col-11 {
-    width: 9.09090909091%;
-}
-
-.col-12 {
-    width: 8.33%;
-}
 
 .col-2-3 {
     width: 66.66%;
 }
 
-.col-3-1{
+.col-3-1 {
     width: 33.33%;
 }
 
@@ -397,7 +435,9 @@ section {
     width: 90%;
 }
 
+
 /* Golden Ratio */
+
 .col-61 {
     width: 61.8%;
 }
@@ -406,14 +446,16 @@ section {
     width: 50%;
 }
 
+
 /* --------- 2.1 Header --------- */
 
 #header {
-    height: 71px !important;
+    height: 87px;
     overflow: visible;
     z-index: 9999;
     width: 100%;
     position: absolute !important;
+    padding: 0 10px;
 }
 
 #header .row {
@@ -434,16 +476,18 @@ section {
     margin: 0;
 }
 
+
 /* --------- 2.2 Logo ---------- */
 
 #logo {
     float: left;
-    height: 71px;
-    line-height: 66px;
+    height: 60px;
+    line-height: 58px;
     margin-right: 15px;
 }
 
-#logo h1, #logo h2 {
+#logo h1,
+#logo h2 {
     display: inline-block;
 }
 
@@ -477,6 +521,7 @@ section {
     display: inline-block;
 }
 
+
 /* --------- 2.3 Buttons ---------- */
 
 .call-to-action {
@@ -484,7 +529,7 @@ section {
 }
 
 .button {
-    font-size: 16px;
+    font-size: 0.8em;
     margin: 35px 0;
     padding: 11px 16px;
     -webkit-transition: all .3s linear;
@@ -494,70 +539,79 @@ section {
     border-width: 3px;
     border-style: solid;
     border-radius: 10px;
-    color:var(--brand-med-brown);
-    border-color:var(--brand-med-brown);
+    color: var(--brand-med-brown);
+    border-color: var(--brand-med-brown);
 }
 
-.button, input[type="submit"]  {
+.button,
+input[type="submit"] {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
-    font-size:16px;
-    font-weight:bold;
+    font-size: 0.8em;
+    font-weight: bold;
 }
-.button:hover,  input[type="submit"]:hover {
-    color:var(--brand-white);
+
+.button:hover,
+input[type="submit"]:hover {
+    color: var(--brand-white);
     background-color: var(--brand-med-brown);
 }
 
 #banner-content .button {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
-    font-size:16px;
-    margin:5px
+    font-size: 0.8em;
+    margin: 5px
 }
 
-#contact .button{
-    font-size:16px;
+#contact .button {
+    font-size: 0.8em;
     padding: 12px 22px;
     margin: 2em auto;
     max-width: 60%;
     border-radius: 15px;
     background-color: var(--brand-med-brown);
-    border-color: var(--brand-med-brown);;
+    border-color: var(--brand-med-brown);
+    ;
     color: var(--brand-light-gray);
 }
 
-#contact .button:hover{
+#contact .button:hover {
     background-color: var(--brand-white);
-    border-color: var(--brand-white);;
+    border-color: var(--brand-white);
+    ;
     color: var(--brand-med-brown);
 }
 
-#plan .button{
-    font-size:18px;
+#plan .button {
+    font-size: 18px;
     padding: 16px 26px;
     margin: 2em auto;
-    max-width: 20%;
+    width: 10em;
     border-radius: 50px;
-    border-color: var(--brand-med-brown);;
+    border-color: var(--brand-med-brown);
+    ;
     color: var(--brand-med-brown);
 }
-#plan .button:hover{
+
+#plan .button:hover {
     background-color: var(--brand-med-brown);
-    border-color: var(--brand-med-brown);;
+    border-color: var(--brand-med-brown);
+    ;
     color: var(--brand-white);
 }
+
 
 /* Play Button */
 
 #video-section {
-    position:relative;
+    position: relative;
 }
 
 .play-video {
-    height:110px;
-    position:absolute;
-    top:50%;
-    margin-top:-110px;
-    width:100%;
+    height: 110px;
+    position: absolute;
+    top: 50%;
+    margin-top: -110px;
+    width: 100%;
 }
 
 .play-icon {
@@ -597,7 +651,7 @@ section {
     text-transform: none;
     display: block;
     -webkit-font-smoothing: antialiased;
-    color:#fff;
+    color: #fff;
 }
 
 .play-video .play-icon {
@@ -642,7 +696,6 @@ section {
 
 #header nav ul {
     text-transform: uppercase;
-
 }
 
 #header nav a {
@@ -653,10 +706,12 @@ section {
     color: var(--brand-dark-gray)
 }
 
-#header nav a:hover, #header nav .active {
-    color:var(--brand-med-brown);
-    text-shadow:0px 0px 1px var(--brand-med-brown);
+#header nav a:hover,
+#header nav .active {
+    color: var(--brand-med-brown);
+    text-shadow: 0px 0px 1px var(--brand-med-brown);
 }
+
 
 /*Navigation Solid*/
 
@@ -668,7 +723,7 @@ section {
     background: var(--brand-white);
     box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.2);
     position: fixed !important;
-    left:0;
+    left: 0;
 }
 
 #header.nav-solid nav a {
@@ -680,6 +735,7 @@ section {
     transition: all 0.3s ease-out;
 }
 
+
 /* Social Elements when Solid*/
 
 #header.nav-solid .social-icons a {
@@ -688,6 +744,7 @@ section {
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
 }
+
 
 /* Responsive Nav Styling */
 
@@ -699,7 +756,7 @@ section {
 #nav-trigger span {
     display: inline-block;
     width: 38px;
-    height: 71px;
+    height: 60px;
     color: var(--brand-med-brown);
     cursor: pointer;
     text-transform: uppercase;
@@ -717,8 +774,8 @@ section {
     font-family: "fontAwesome";
     display: inline-block;
     width: 38px;
-    height: 71px;
-    line-height: 75px;
+    height: 60px;
+    line-height: 58px;
     text-align: center;
     content: "\f0c9";
     border-top-right-radius: 5px;
@@ -729,11 +786,14 @@ section {
     content: "\f00d";
 }
 
-#nav-trigger span:hover, .nav-solid #nav-trigger span.open:hover, .nav-solid #nav-trigger span:hover {
+#nav-trigger span:hover,
+.nav-solid #nav-trigger span.open:hover,
+.nav-solid #nav-trigger span:hover {
     opacity: 0.6;
 }
 
-#nav-trigger span.open, #nav-trigger span.open:hover {
+#nav-trigger span.open,
+#nav-trigger span.open:hover {
     color: var(--brand-med-brown);
 }
 
@@ -785,6 +845,7 @@ nav#nav-mobile a {
     transition: all 0.3s ease-out;
 }
 
+
 /* --------- 2.5 Social Elements ---------- */
 
 #header .col-4 {
@@ -802,7 +863,7 @@ nav#nav-mobile a {
     text-align: center;
 }
 
-.social-icons a:hover{
+.social-icons a:hover {
     opacity: 0.6;
 }
 
@@ -814,7 +875,9 @@ nav#nav-mobile a {
     margin-top: 27px;
 }
 
+
 /* --------- 2.6 Images ---------- */
+
 
 /*Alignment*/
 
@@ -840,8 +903,13 @@ a img:hover {
     opacity: 0.7;
 }
 
+
 /*------------------------------------------------------------------------------------------*/
+
+
 /* 3. Fonts */
+
+
 /*------------------------------------------------------------------------------------------*/
 
 h1 {
@@ -868,93 +936,94 @@ h6 {
     padding: 7px 0;
 }
 
-/* Section Headings */
-
-.section-heading {
-    padding: 15px 0;
-}
-
-.section-subtitle {
-    font-size: 18px;
-    padding-top: 0;
-}
-
-.section-heading h3 {
-    font-size: 14px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    padding-bottom: 0;
-    margin-top: 10px;
-}
 
 /*------------------------------------------------------------------------------------------*/
+
+
 /* 4. Banner */
+
+
 /*------------------------------------------------------------------------------------------*/
 
 #banner {
     background-size: cover;
 }
+
 #banner-content.row {
-    padding: 3em 0 ;
     height: 100vh;
 }
+
 #subpage-banner-content {
-    height:70vh;
+    height: 70vh;
 }
-#subpage-banner-content .row{
-    height:70vh;
+
+#subpage-banner-content .row {
+    height: 70vh;
 }
+
 .align-items-end {
     -webkit-box-align: end!important;
     -ms-flex-align: end!important;
     align-items: flex-end!important;
 }
 
+
 /* Banner Typography */
 
 #banner-content h1 {
-    font-size:52px;
-    line-height:60px;
-    font-weight:800;
+    font-size: 2.5em;
+    line-height: 60px;
+    font-weight: 800;
     padding-top: 5%;
     text-align: left;
 }
 
 #banner-content h2 {
-    font-size:18px;
-    font-weight:300;
+    font-size: 1.2em;
+    font-weight: 300;
     text-align: left;
 }
-#subpage-banner-content h2{
+
+#subpage-banner-content h2 {
     text-align: center;
-    font-size: 34px;
+    font-size: 2em;
     font-weight: 800;
 }
-#banner-content .section-heading p{
+
+#banner-content .section-heading p {
     text-align: left;
 }
+
 #banner-content .section-heading:before {
     content: "";
     display: block;
     width: 30px;
     height: 5px;
-    margin-top: 30px;
     border-radius: 5px;
     margin-top: 100px;
 }
+
 #banner-content .section-heading:after {
     margin: 30px 0;
 }
-#subpage-banner-content .section-heading:after{
+
+#subpage-banner-content .section-heading:after {
     margin: 10px auto 25px auto;
 }
 
-/*------------------------------------------------------------------------------------------*/
-/* 5. Content Elements */
+
 /*------------------------------------------------------------------------------------------*/
 
+
+/* 5. Content Elements */
+
+
+/*------------------------------------------------------------------------------------------*/
+
+
 /* --------- Description ---------- */
-.description{
+
+.description {
     padding: 2em 0;
     font-weight: bold;
 }
@@ -963,12 +1032,15 @@ h6 {
     font-weight: bold;
     padding-top: 0;
 }
+
 .description p {
     margin-top: 0;
-    text-align: center  ;
+    text-align: center;
 }
 
+
 /* --------- 5.1 Icons ---------- */
+
 
 /*Font Icon sizes*/
 
@@ -976,16 +1048,17 @@ h6 {
     font-size: 15px !important;
 }
 
+
 /*Icon Block*/
 
 .icon-block {
     position: relative;
 }
 
-
 .icon-block .icon {
     position: absolute;
 }
+
 
 /* Icon Above */
 
@@ -1002,11 +1075,15 @@ h6 {
     padding-top: 25px;
 }
 
+
 /* --------- 5.2 Parallax Elements ---------- */
 
-.banner-parallax-1, .banner-parallax-2, .banner-parallax-3 {
+.banner-parallax-1,
+.banner-parallax-2,
+.banner-parallax-3 {
     min-height: 350px;
 }
+
 
 /* --------- 5.3 Divider ---------- */
 
@@ -1044,9 +1121,16 @@ h6 {
     top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-  }
+    padding: 0;
+}
+
+
 /*------------------------------------------------------------------------------------------*/
+
+
 /* 6. Landing Page Sections */
+
+
 /*------------------------------------------------------------------------------------------*/
 
 #web img {
@@ -1057,7 +1141,7 @@ h6 {
     max-width: 100%;
 }
 
-#plugin .pic{
+#plugin .pic {
     display: inline-block;
     width: 28em;
     height: 25em;
@@ -1068,11 +1152,10 @@ h6 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    
 }
 
-#plan .pic{
-    width: 35em;
+#plan .pic {
+    max-width: 35em;
     height: 20em;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1080,6 +1163,8 @@ h6 {
     border-radius: 1em;
     margin: auto;
 }
+
+
 /* --------- 6.2 Features ---------- */
 
 .features.row {
@@ -1090,6 +1175,7 @@ h6 {
 .features div:nth-child(4) {
     clear: both;
 }
+
 
 /* --------- 6.3 Feedback ---------- */
 
@@ -1124,6 +1210,7 @@ blockquote {
     margin: 10px auto 15px auto;
 }
 
+
 /* Style Big */
 
 .feedback.big {
@@ -1133,6 +1220,7 @@ blockquote {
 .feedback.big q {
     font-size: 22px;
 }
+
 
 /* --------- 6.7 Pricing Table ---------- */
 
@@ -1146,11 +1234,10 @@ blockquote {
     border-radius: 10px;
 }
 
-.pricing-block-content:hover{
-    border-color:var(--brand-med-brown);
+.pricing-block-content:hover {
+    border-color: var(--brand-med-brown);
     box-shadow: 0 0 20px rgba(0, 0, 0, .4);
 }
-
 
 .pricing-block ul {
     list-style: none;
@@ -1162,19 +1249,20 @@ blockquote {
 }
 
 .pricing-block li:last-of-type {
-    border:none;
+    border: none;
 }
 
 .pricing-block h3 {
-    font-size:17px;
-    text-transform:uppercase;
-    padding-bottom:0;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding-bottom: 0;
 }
 
 .pricing-sub {
     font-style: italic;
-    margin:0 0 25px 0;
+    margin: 0 0 25px 0;
 }
+
 
 /*Price*/
 
@@ -1198,55 +1286,65 @@ blockquote {
     font-size: 22px;
 }
 
-.pricing  p {
-    font-style:italic;
-    line-height:auto;
-    margin:0;
+.pricing p {
+    font-style: italic;
+    line-height: auto;
+    margin: 0;
 }
 
+
 /* --------- 6.8 Contact ---------- */
-#contact .section-heading{
-    padding: 10em 0 0 0 ;
+
+#contact .section-heading {
+    padding: 10em 0 0 0;
 }
-#contact .section-heading:after{
-    visibility: hidden;
+
+#contact .section-heading:after {
+    display: none;
 }
-#contact h3{
-    font-size: 24px;
+
+#contact p {
+    font-size: 1.2em;
     font-weight: 100;
 }
-#contact a{
+
+#contact a {
     position: relative;
     display: inline-block;
     border-radius: 2.5em;
     border: var(--brand-med-brown) solid 2px;
-    color:var(--brand-med-brown);
+    color: var(--brand-med-brown);
     height: 5em;
     width: 5em;
     margin: 0.5em;
 }
-#contact a:hover{
+
+#contact a:hover {
     border: var(--brand-dark-brown) solid 2px;
     background-color: var(--brand-dark-brown);
-    color:var(--brand-white);
+    color: var(--brand-white);
     opacity: 1;
 }
-#contact .social-icons i{
+
+#contact .social-icons i {
     position: absolute;
     font-size: 26px;
-    top:50%;
-    left:50%;
+    top: 50%;
+    left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
-#plan .section-heading:after{
+#plan .section-heading:after {
     height: 0;
 }
+
+
 /* --------- 6.8 Overlay ---------- */
+
 .overlay {
-    background-image:rgb(from var(--brand-dark-gray) r g b/0.5);
+    background-image: rgb(from var(--brand-dark-gray) r g b/0.5);
     background-size: cover;
     color: white;
     padding: 20px;
@@ -1258,12 +1356,12 @@ blockquote {
     content: '';
 }
 
-.gradient-overlay{
-    background-image:
-    linear-gradient(to bottom, rgb(from var(--brand-dark-gray) r g b/0.5), rgb(from var(--brand-dark-gray) r g b/0.8), rgb(from var(--brand-dark-gray) r g b/1));
+.gradient-overlay {
+    background-image: linear-gradient(#2121237d, #212123bd, #212123);
+    /* linear-gradient(to bottom, rgb(from var(--brand-dark-gray) r g b/0.5), rgb(from var(--brand-dark-gray) r g b/0.8), rgb(from var(--brand-dark-gray) r g b/1)); */
 }
 
-.section-pic{
+.section-pic {
     position: relative;
     background-color: #fff;
     min-height: 400px;
@@ -1277,6 +1375,7 @@ blockquote {
 #plan a:hover .plan-overlay {
     opacity: 1;
 }
+
 .plan-overlay {
     background: rgba(0, 0, 0, 0.4);
     position: absolute;
@@ -1284,7 +1383,7 @@ blockquote {
     right: 0;
     bottom: 0;
     left: 0;
-    width: 35em;
+    max-width: 35em;
     height: 100%;
     opacity: 0;
     margin: auto;
@@ -1294,6 +1393,7 @@ blockquote {
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
 }
+
 #plan a {
     display: block;
     text-align: center;
@@ -1302,6 +1402,7 @@ blockquote {
     font-weight: bold;
     color: #fff;
 }
+
 .plan-overlay span {
     position: absolute;
     top: 44%;
@@ -1310,18 +1411,25 @@ blockquote {
     text-align: center;
     display: inline-block;
     font-size: 28px;
-
 }
-/*------------------------------------------------------------------------------------------*/
-/* 7. Footer */
+
+
 /*------------------------------------------------------------------------------------------*/
 
-#landing-footer, #landing-footer p, #landing-footer a {
+
+/* 7. Footer */
+
+
+/*------------------------------------------------------------------------------------------*/
+
+#landing-footer,
+#landing-footer p,
+#landing-footer a {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
-    font-size:12px;
-    font-weight:normal;
+    font-size: 12px;
+    font-weight: normal;
     background-color: var(--brand-dark-gray);
-    color:var(--brand-light-gray);
+    color: var(--brand-light-gray);
 }
 
 #landing-footer {
@@ -1346,8 +1454,10 @@ blockquote {
 }
 
 #landing-footer i {
-    color:#999;
+    color: #999;
 }
+
+
 /* Scroll Up */
 
 #scrollUp {
@@ -1386,6 +1496,7 @@ blockquote {
     opacity: 1;
 }
 
+
 /*Preloader*/
 
 #preloader {
@@ -1394,28 +1505,35 @@ blockquote {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #fff; /* change if the mask should have another color then white */
-    z-index: 99999; /* makes sure it stays on top */
+    background-color: #fff;
+    /* change if the mask should have another color then white */
+    z-index: 99999;
+    /* makes sure it stays on top */
 }
 
 #status {
     width: 110px;
     height: 110px;
     position: absolute;
-    left: 50%; /* centers the loading animation horizontally one the screen */
-    top: 50%; /* centers the loading animation vertically one the screen */
+    left: 50%;
+    /* centers the loading animation horizontally one the screen */
+    top: 50%;
+    /* centers the loading animation vertically one the screen */
     background-position: center;
-    margin: -55px 0 0 -55px; /* is width and height divided by two */
+    margin: -55px 0 0 -55px;
+    /* is width and height divided by two */
     text-align: center;
 }
+
 
 /*!
  * Load Awesome v1.1.0 (http://github.danielcardoso.net/load-awesome/)
  * Copyright 2015 Daniel Cardoso <@DanielCardoso>
  * Licensed under MIT
  */
+
 .la-ball-triangle-path,
-.la-ball-triangle-path > div {
+.la-ball-triangle-path>div {
     position: relative;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -1432,7 +1550,7 @@ blockquote {
     color: #333;
 }
 
-.la-ball-triangle-path > div {
+.la-ball-triangle-path>div {
     display: inline-block;
     float: none;
     background-color: currentColor;
@@ -1444,7 +1562,7 @@ blockquote {
     height: 32px;
 }
 
-.la-ball-triangle-path > div {
+.la-ball-triangle-path>div {
     position: absolute;
     top: 0;
     left: 0;
@@ -1453,21 +1571,21 @@ blockquote {
     border-radius: 100%;
 }
 
-.la-ball-triangle-path > div:nth-child(1) {
+.la-ball-triangle-path>div:nth-child(1) {
     -webkit-animation: ball-triangle-path-ball-one 2s 0s ease-in-out infinite;
     -moz-animation: ball-triangle-path-ball-one 2s 0s ease-in-out infinite;
     -o-animation: ball-triangle-path-ball-one 2s 0s ease-in-out infinite;
     animation: ball-triangle-path-ball-one 2s 0s ease-in-out infinite;
 }
 
-.la-ball-triangle-path > div:nth-child(2) {
+.la-ball-triangle-path>div:nth-child(2) {
     -webkit-animation: ball-triangle-path-ball-two 2s 0s ease-in-out infinite;
     -moz-animation: ball-triangle-path-ball-two 2s 0s ease-in-out infinite;
     -o-animation: ball-triangle-path-ball-two 2s 0s ease-in-out infinite;
     animation: ball-triangle-path-ball-two 2s 0s ease-in-out infinite;
 }
 
-.la-ball-triangle-path > div:nth-child(3) {
+.la-ball-triangle-path>div:nth-child(3) {
     -webkit-animation: ball-triangle-path-ball-tree 2s 0s ease-in-out infinite;
     -moz-animation: ball-triangle-path-ball-tree 2s 0s ease-in-out infinite;
     -o-animation: ball-triangle-path-ball-tree 2s 0s ease-in-out infinite;
@@ -1479,7 +1597,7 @@ blockquote {
     height: 16px;
 }
 
-.la-ball-triangle-path.la-sm > div {
+.la-ball-triangle-path.la-sm>div {
     width: 4px;
     height: 4px;
 }
@@ -1489,7 +1607,7 @@ blockquote {
     height: 64px;
 }
 
-.la-ball-triangle-path.la-2x > div {
+.la-ball-triangle-path.la-2x>div {
     width: 20px;
     height: 20px;
 }
@@ -1499,14 +1617,16 @@ blockquote {
     height: 96px;
 }
 
-.la-ball-triangle-path.la-3x > div {
+.la-ball-triangle-path.la-3x>div {
     width: 30px;
     height: 30px;
 }
 
+
 /*
  * Animations
  */
+
 @-webkit-keyframes ball-triangle-path-ball-one {
     0% {
         -webkit-transform: translate(0, 220%);
@@ -1902,7 +2022,3 @@ blockquote {
         transform: translate(220%, 220%);
     }
 }
-
-
-
-
